@@ -17,8 +17,8 @@ def get_gdp_data():
     
     url = "https://drive.google.com/uc?id=1t_7rVTR7iLV1aYOf4WiT66jgfPMSnLuy"
     output = "data/diaries_premier.csv"
-    gdown.download(url, output)
-    
+    gdown.download(url, output, quiet=False)
+
     path = Path(__file__).parent/'data/diaries_premier.csv'
     ddf = pd.read_csv(path, index_col="id")
 
