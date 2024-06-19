@@ -1,3 +1,5 @@
 streamlit-nightly
 pandas
 gdown
+duckdb
+generate_data
